@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body{
+    height: 100%;
+    width: 100%;
+    font-family: Montserrat;
+}
+#main{
+    height: 100%;
+    width: 100%;  
+}
+#nav{
+    height: 80px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+}
+.gola{
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+}
+#nav-part2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+#nav-part2 h4{
+    font-size: 16px;
+    font-weight: 600;
+}
+#nav-part2 h4 span{
+    color: aqua;
+    margin-left: 20px;
+}
+#nav2{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 80px;
+}
+#nav2 h3{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-left: 20px;
+}
+#content{
+    height:calc(100% - 150px);
+    width: 100%;
+}
+#text-content{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
+#text-content::-webkit-scrollbar{
+    background-color: transparent;
+    height: 7px;
+}
+#text-content::-webkit-scrollbar-thumb{
+    background-color: orangered;
+}
+.elem{
+    flex-shrink: 0;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.elem h1{
+    font-size: 130px;
+    font-weight: 300;
+}
+#image-content{
+    height: 60%;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+#image-content::-webkit-scrollbar{
+    display: none;
+}
+
+#image-content img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
